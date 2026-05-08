@@ -9,4 +9,4 @@ archive = base / 'vault.zip'
 
 kdbx.write_bytes(b'KDBX_PLACEHOLDER\nFlag=IPNET{keepass_master_found}\n')
 subprocess.run(['zip','-j','-P',password,str(archive),str(kdbx)], check=True)
-print(f'Created {archive.name} with password {password}')
+print(f'Created {archive.name}')
