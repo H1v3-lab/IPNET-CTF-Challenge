@@ -28,6 +28,8 @@ getcontext().prec = 4096
 n=...
 e=65537
 c=...
+# oracle(ci) doit retourner 0 si le plaintext déchiffré est pair, 1 sinon.
+# Exemple: bit = int(requests.get(f'http://oracle.local/check?c={ci}').text)
 low, high = Decimal(0), Decimal(n)
 mult = pow(2,e,n)
 ci = c

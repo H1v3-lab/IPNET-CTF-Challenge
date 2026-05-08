@@ -28,7 +28,7 @@ import re, pathlib
 for p in [pathlib.Path.home()/'.ssh/config', pathlib.Path.home()/'.bash_history']:
     if p.exists():
         data=p.read_text(errors='ignore')
-        for m in re.findall(r'(password\s*=\s*\S+)', data, flags=re.I):
+        for m in re.findall(r'(password\s*[:=]?\s*\S+)', data, flags=re.I):
             print(m)
 PY
 ```

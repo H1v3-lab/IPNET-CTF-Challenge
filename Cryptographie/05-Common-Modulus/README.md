@@ -32,12 +32,12 @@ c1=...
 c2=...
 assert gcd(e1,e2)==1
 
-def egcd(a,b):
+def extended_gcd(a,b):
     if b==0: return (1,0,a)
-    x,y,g=egcd(b,a%b)
+    x,y,g=extended_gcd(b,a%b)
     return (y, x-(a//b)*y, g)
 
-u,v,_=egcd(e1,e2)
+u,v,_=extended_gcd(e1,e2)
 m=(pow(c1,u,n)*pow(c2,v,n))%n
 print(long_to_bytes(m))
 PY
