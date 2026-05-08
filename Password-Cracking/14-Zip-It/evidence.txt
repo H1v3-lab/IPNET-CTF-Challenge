@@ -1,0 +1,2 @@
+Network evidence package
+Flag: IPNET{zip_it_unpacked}

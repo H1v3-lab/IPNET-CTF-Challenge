@@ -1,0 +1,6 @@
+May 08 08:12:10 relay sshd[1021]: Server listening on 0.0.0.0 port 22.
+May 08 08:12:11 relay sshd[1033]: Failed password for invalid user test from 10.10.0.14 port 41422 ssh2
+May 08 08:13:45 relay sshd[1048]: Accepted publickey for analyst from 10.10.0.25 port 52311 ssh2
+May 08 08:14:03 relay sudo: analyst : TTY=pts/1 ; PWD=/home/analyst ; USER=root ; COMMAND=/bin/cat /opt/notes
+May 08 08:14:04 relay note[2001]: mission-marker=IPNET{protected_key_opened}
+May 08 08:14:08 relay sshd[1059]: Connection closed by authenticating user analyst 10.10.0.25 port 52311 [preauth]
