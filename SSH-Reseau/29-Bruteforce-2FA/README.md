@@ -30,7 +30,7 @@ for i in range(10000):
     try:
         r=requests.post(url,data={'code':code},timeout=3)
     except requests.RequestException as exc:
-        print('Erreur réseau:', exc)
+        print('Network error:', exc)
         continue
     if 'OK' in r.text:
         print('Valid:', code)
