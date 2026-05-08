@@ -1,7 +1,7 @@
-# 06 - Wieners Attack
+# 06 - Wiener's Attack
 
 ## Nom du Challenge
-Wieners Attack
+Wiener's Attack
 
 ## Description
 Une clé RSA générée dans l'urgence a un d trop petit. Les communications d'un agent dormant doivent être relues.

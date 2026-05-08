@@ -1,7 +1,7 @@
-# 04 - Fermats Revenge
+# 04 - Fermat's Revenge
 
 ## Nom du Challenge
-Fermats Revenge
+Fermat's Revenge
 
 ## Description
 Deux nombres premiers trop proches ont été utilisés pour une clé opérationnelle. L'adversaire pensait le défaut invisible.

@@ -1,7 +1,7 @@
-# 07 - Hastads Broadcast
+# 07 - Håstad's Broadcast
 
 ## Nom du Challenge
-Hastads Broadcast
+Håstad's Broadcast
 
 ## Description
 Le même ordre chiffré avec e=3 a été diffusé à trois relais. Les trois interceptions sont disponibles.
