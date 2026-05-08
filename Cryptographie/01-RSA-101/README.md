@@ -24,6 +24,7 @@ IPNET{mot_de_passe_ou_cle}
 ```bash
 python - <<'PY'
 from Crypto.Util.number import inverse
+# Remplacer p/q/e par les valeurs fournies dans le challenge.
 p=...
 q=...
 e=65537

